@@ -128,7 +128,7 @@ img {
 }
 .control-palette li > div:hover {
   transform: scale(1.1);
-  transition: all 500ms;
+  transition: transform 300ms;
 }
 li:nth-of-type(1) { order: 1; }
 li:nth-of-type(2) { order: 2; }

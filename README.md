@@ -18,7 +18,7 @@ A simple, not fancy at all, image upload.
 
 <br>
 
-Play around with it on [CodePen](https://codepen.io/samanthaming/pen/)  
+Play around with it on [CodePen](https://codepen.io/samanthaming/pen/XBKBBv)  
 Or see it live! [here](https://samanthaming.github.io/not-fancy-image-upload/)
 
 <br>
@@ -33,7 +33,7 @@ Here are the general steps to create your own Not Fancy Image Upload.
 
 You need to understand 2 concepts in dealing with your image Upload.
 
-To handle our image upload, we need to uitlize 2 APIs:
+To handle our image upload, we need to utilize 2 APIs:
 
 **1. File API**
 
@@ -123,6 +123,31 @@ methods: {
 <img :src="imageUrl">
 ```
 
+## Centering Absolute Image
+
+To center an image with position absolute. We need to use both the `transform` and `left` property.
+
+CSS **left** property is based on the size of the parent element.  
+CSS **transform** property is based on the the size of the target element.
+
+left 50% will move the element exactly at the center of the main container where this element belongs! BUT translateX(50%) will move the element right exactly to 50% of its width,and NOT at the center of the whole Container element!
+
+```css
+.parent {
+  position: relative;
+}
+
+img {
+  position: absolute;
+  
+  /* This will move the element exactly at the center of the parent container */
+  left: 50%;
+  
+  /* This will re-adjust the element right exactly to 50% of its own width */
+  transform: translateX(-50%);
+}
+```
+
 # Resources
 
 - [CodePen: Select or drop image with Vuejs](https://codepen.io/raffo1234/pen/bZQXwZ)
@@ -131,3 +156,4 @@ methods: {
 - [David Walsh: File API](https://davidwalsh.name/file-api)
 - [CodePen: Vue CSS Custom Property Test](https://codepen.io/richardtallent/pen/yvpERW/)
 - [Reading files in JavaScript using the File APIs](https://www.html5rocks.com/en/tutorials/file/dndfiles/)
+- [Stack Overflow: Why does “left: 50%, transform: translateX(-50%)” horizontally center an element?](https://stackoverflow.com/questions/25982135/why-does-left-50-transform-translatex-50-horizontally-center-an-element)
