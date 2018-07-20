@@ -23,9 +23,9 @@ Or see it live! [here](https://samanthaming.github.io/not-fancy-image-upload/)
 
 <br>
 
-![App](images/not-fancy-clock-image-upload.png)
+![App](images/not-fancy-image-upload.png)
 
-![App](images/not-fancy-clock-image-upload-image.png)
+![App](images/not-fancy-image-upload-image.png)
 
 # Notes
 
