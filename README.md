@@ -29,11 +29,7 @@ Or see it live! [here](https://samanthaming.github.io/not-fancy-image-upload/)
 
 # Notes
 
-Here are the general steps to create your own Not Fancy Image Upload.
-
-You need to understand 2 concepts in dealing with your image Upload.
-
-To handle our image upload, we need to utilize 2 APIs:
+Here are the general steps to create your own Not Fancy Image Upload. You need to understand 2 concepts in dealing with your image Upload. To handle our image upload, we need to utilize 2 APIs:
 
 **1. File API**
 
